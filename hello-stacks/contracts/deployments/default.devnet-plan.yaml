@@ -9,9 +9,23 @@ plan:
     - id: 0
       transactions:
         - contract-publish:
+            contract-name: example-stacks01
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 5720
+            path: contracts/example-stacks01.clar
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
+            contract-name: example-stacks02
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 8170
+            path: contracts/example-stacks02.clar
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
             contract-name: hello-stacks
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            cost: 1340
+            cost: 1320
             path: contracts/hello-stacks.clar
             anchor-block-only: true
             clarity-version: 2
